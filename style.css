@@ -76,8 +76,8 @@ header {
 }
 
 
-.list-number {
-    padding-left: 20px;
+ol.list-number {
+    padding: 0px 20px;
 }
 
 .checkbox {
@@ -125,17 +125,16 @@ td,
 th {
     border: 1px solid #95a1bb;
     border-collapse: collapse;
+    font-size: 14px;
 }
 
 th {
     font-weight: 700;
-    font-size: 14px;
     text-align: center;
     padding: 12px 15px;
 }
 
 td {
-    font-size: 14px;
     padding: 12px 15px;
 }
 
@@ -145,10 +144,10 @@ footer {
 }
 
 a {
+    text-decoration: none;
     font-size: 14px;
 }
 
 a:visited {
-    text-decoration: none;
     color: #2965f1;
 }
