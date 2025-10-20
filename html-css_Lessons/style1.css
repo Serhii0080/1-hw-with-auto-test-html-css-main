@@ -1,0 +1,361 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.header {
+    background-color: #0a61f7;
+    padding: 14px 0;
+    display: flex;
+    height: 76px;
+    width: 1400px;
+}
+
+.Logo {
+    margin-left: 130px;
+}
+
+.menu {
+    display: flex;
+    margin-left: 680px;
+    width: 251px;
+    height: 20px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    margin-right: 130px;
+    gap: 24px;
+}
+
+.menu-item {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.title-main {
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 68px;
+    color: #363940;
+    margin-bottom: 30px;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #95a1bb;
+    margin-bottom: 40px;
+}
+
+.button-main {
+    width: 152px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #0a61f7;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19.6px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.box-main {
+    width: 459px;
+    height: 300px;
+    margin: 252px 0px 248px 130px;
+    padding-right: 70px;
+}
+
+.img-main {
+    border-radius: 10px 10px 0px 0px;
+    width: 656px;
+    height: 650px;
+    margin: 150px 130px 0px 25px;
+}
+
+.main {
+    width: 1400px;
+    height: 800px;
+    background: #fff;
+    display: flex;
+}
+
+.rates-section {
+    width: 1400px;
+    height: 625px;
+    background: #f9fafc;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.title-rates {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 43px;
+    color: #363940;
+    margin-bottom: 20px;
+}
+
+.table-rates {
+    width: 940px;
+    height: 300px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #95a1bb;
+    width: 240px;
+    padding: 15px 0px;
+    text-align: center;
+}
+
+.table-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #363940;
+}
+
+.table-subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #363940;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.table-subtitle.gray {
+    color: #95a1bb;
+}
+
+.table-link {
+    color: #0a61f7;
+}
+
+
+.table-button {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 19.6px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #0a61f7;
+    border: 1px solid #0a61f7;
+    border-radius: 4px;
+    width: 140px;
+    padding: 8px 0;
+}
+
+.table-button.active {
+    background: #0a61f7;
+    color: #fff;
+}
+
+.table-footer td {
+    padding: 30px 0;
+}
+
+.create-account-section {
+    width: 1400px;
+    height: 718px;
+    padding: 100px 130px;
+    display: flex;
+}
+
+.create-account-section .title {
+    margin-bottom: 50px;
+}
+
+.create-account-section .title {
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+.box-2 {
+    width: 500px;
+    height: 370px;
+    margin-right: 160px;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 43px;
+    color: #363940;
+    margin-bottom: 50px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.375;
+    color: #363940;
+}
+
+
+.list li {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.list li::before {
+    font-weight: bold;
+    margin-right: 15px;
+    content: "\2713";
+    top: 4px;
+    line-height: 12px;
+    font-size: 16px;
+    color: #0a61f7;
+}
+
+input,
+select,
+fieldset,
+textarea {
+    border-radius: 4px;
+    border: 1px solid #95A1BB;
+    padding: 14px 15px;
+}
+
+input,
+select,
+fieldset,
+textarea,
+label,
+legend {
+    color: #95A1BB;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+}
+
+input,
+select,
+fieldset,
+textarea,
+label,
+legend input::placeholder,
+select::placeholder,
+textarea::placeholder {
+    color: #95A1BB;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    font-family: inherit;
+}
+
+input[type="text"] {
+    width: 100%;
+}
+
+input[type="email"],
+input[type="password"] input[type="date"],
+select {
+    width: 230px;
+    height: 50px;
+}
+
+fieldset {
+    width: 100%;
+    padding: 30px 15px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 80px;
+    resize: none;
+}
+
+form .button {
+    width: 100%;
+    background: #0a61f7;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+form {
+    width: 480px;
+    height: 518px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+select {
+    background: url(./assets/images_Homework/Arrow-down.svg) no-repeat right 15px top 50%;
+    appearance: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: url(./assets/images_Homework/Calendar.svg) no-repeat;
+}
+
+
+.footer {
+    width: 1400px;
+    height: 62px;
+    background: #0a61f7;
+    padding: 20px 545px;
+}
+
+small {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #fff;
+}
+
+.em-password {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.date-select {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.inp-date {
+    width: 230px;
+    height: 50px;
+}
