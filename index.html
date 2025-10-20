@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>It-incubator precourse</title>
 </head>
 
@@ -13,23 +19,24 @@
     <!-- ⚠️ Атрибут data-cy удалять нельзя! Он учавствует в проверке. Если его удалить, тесты не пройдут. -->
 
     <header>
-        <span>IT-INCUBATOR</span>
+        <span class="logo">IT-INCUBATOR</span>
     </header>
 
-    <section data-cy="hw1-section-main-pre">
+    <section class="main-section" data-cy="hw1-section-main-pre">
         <!-- 1) В этом разделе создай 3 дочерних элемента: -->
 
         <!-- a) Заголовок первого уровня со своим ФИО -->
-        <h1>Жук Сергей Юриевич</h1>
+        <h1 class="main-title">Жук Сергей Юриевич</h1>
         <!-- b) Несколько строк о себе: где учишься или работаешь, хобби, увлечения. Используй тег для абзаца. Длина строки должна быть больше 50-ти симвов (пробелы и др знаки припинания тоже считаются символом) -->
-        <p>Учусь на FrontEnd в школе IT-инкубатор, занимаюсь вёрсткой HTML и CSS, люблю слушать аудиокниги.</p>
+        <p class="main-text">Учусь на FrontEnd в школе IT-инкубатор, занимаюсь вёрсткой HTML и CSS, люблю слушать
+            аудиокниги.</p>
         <!-- c) Фото (или любую картинку из интернета). Не забудь добавить описание на случай, если изображение не загрузится -->
-        <img src="./assets/s1.jpg" alt="img">
+        <img class="main-img" src="./assets/Clip path group.png" alt="img">
     </section>
 
-    <section data-cy="hw1-section-about-pre">
+    <section class="section-hobbies" data-cy="hw1-section-about-pre">
         <!-- 2) В этом разделе создай выпадающий список с разными городами (не меньше 3-х). Свой город сделай вторым в этом списке. С помощью специального атрибута, сделай так, чтобы твой город всегда был выбранным по умолчанию  -->
-        <select name="City">
+        <select class="select-city" name="City">
             <option value="Odessa">Odessa</option>
             <option value="Zhytomyr" selected>Zhytomyr</option>
             <option value="Vinnytsia">Vinnytsia</option>
@@ -38,47 +45,62 @@
             <!-- 3) В этом разделе создай 2 дочерних элемента: -->
 
             <!-- a) Заголовок 2-го уровня (любимые книги/фильмы/блюда/страны... и т.п.) -->
-            <h2>Рейтинг любимых сериалов</h2>
+            <h2 class="title">Рейтинг любимых сериалов</h2>
             <!-- b) Маркированный список. В списке должно быть не менее 3-х элементов -->
-            <ul>
-                <li>Stop if You Can</li>
-                <li>Silicon Valley</li>
-                <li>Billions</li>
-                <li>Mr. Robot</li>
+            <ul class="list">
+                <li class="list-custom">Stop if You Can</li>
+                <li class="list-custom">Silicon Valley</li>
+                <li class="list-custom">Billions</li>
+                <li class="list-custom">Mr. Robot</li>
             </ul>
         </div>
         <div data-cy="hw1-ordered-list-box-pre">
             <!-- 3) В этом разделе создай 2 дочерних элемента: -->
 
             <!-- a) Заголовок 2-го уровня с другим названием (любимые книги/фильмы/блюда/страны... и т.п.) -->
-            <h2>Языки программирования</h2>
+            <h2 class="title">Языки программирования</h2>
             <!-- b) Нумерованный (упорядоченный) список. В списке должно быть не менее 3-х элементов -->
-            <ol>
-                <li>JavaScript</li>
-                <li>HTML</li>
-                <li>CSS</li>
+            <ol class="list-number">
+                <li class="list">JavaScript</li>
+                <li class="list">HTML</li>
+                <li class="list">CSS</li>
             </ol>
         </div>
         <div data-cy="hw1-skills-box-pre">
-            <h2>Мои скиллы</h2>
+            <h2 class="title">Мои скиллы</h2>
             <!-- 4) Здесь создай несколько чекбоксов с подписью (не меньше 3-х). 
                 - В подписи укажи названия любых тем по верстке (все, что знаешь или слышал). 
                 - Каждый чекбокс должен быть связан со своей подписью. Для этого чекбокс должен находиться в элементе для подписи
                 - Отметь "галочкой" (с помощью специального атрибута) темы, которые ты уже знаешь. -->
-            <label><input type="checkbox" checked>HTML</label>
-            <label><input type="checkbox" checked>CSS</label>
-            <label><input type="checkbox">JavaScript</label>
-            <label><input type="checkbox">React</label>
-            <label><input type="checkbox">Jquery</label>
+            <label class="name">
+                <input class="checkbox" type="checkbox" checked>HTML
+            </label>
+
+            <label class="name">
+                <input class="checkbox" type="checkbox" checked>CSS
+            </label>
+
+            <label class="name">
+                <input class="checkbox" type="checkbox">JavaScript
+            </label>
+
+            <label class="name">
+                <input class="checkbox" type="checkbox">React
+            </label>
+
+            <label class="name">
+                <input class="checkbox" type="checkbox">Jquery
+            </label>
+
         </div>
         <!-- 5) Создай здесь однострочное поле для ввода текста с подсказкой "Новый скилл", которая исчезает, когда начинаешь что-то печатать (для подсказки есть специальный атрибут) -->
-        <input type="text" placeholder="Новый скилл">
+        <input class="text-inp" type="text" placeholder="Новый скилл">
         <!-- 6) Создай здесь кнопку “Добавить” -->
         <button>Добавить</button>
         <!-- 7) Добавь горизонтальную линию (для этого есть специальный тег) -->
         <hr>
 
-        <table border="1" data-cy="hw-about-table-pre">
+        <table data-cy="hw-about-table-pre">
             <!-- 8) В таблице сделай 5 строк и 3 столбца. 
                         - В первой строке ячейки заголовков, в остальных обычные ячейки
                         - Добавь границы для всей таблицы с помощью специального атрибута border="". Он устарел, но работает
