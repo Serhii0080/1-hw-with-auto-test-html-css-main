@@ -8,6 +8,7 @@ html,
 body {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
+    color: rgb(48, 48, 48);
 }
 
 header {
@@ -30,14 +31,11 @@ header {
 .main-title {
     font-weight: 700;
     font-size: 48px;
-    color: #303030;
     margin-bottom: 20px;
 }
 
 .main-text {
-    /* font-weight: 400; */
     font-size: 18px;
-    color: #303030;
 }
 
 .main-img {
@@ -51,9 +49,7 @@ header {
 
 .select-city {
     width: 150px;
-/*     font-weight: 400; */
     font-size: 16px;
-    color: #303030;
     background: url(./assets/ep_arrow-down.svg) no-repeat right 14.2px top 50%;
     appearance: none;
     border: 1px solid rgba(48, 48, 48, 0.3);
@@ -66,14 +62,11 @@ header {
 .title {
     font-weight: 700;
     font-size: 24px;
-    color: #303030;
     margin-bottom: 25px;
 }
 
 .list {
-/*     font-weight: 400; */
     font-size: 16px;
-    color: #303030;
 }
 
 .list-custom {
@@ -92,9 +85,7 @@ header {
 }
 
 .name {
-/*     font-weight: 400; */
     font-size: 16px;
-    color: #303030;
     margin-right: 6px;
 }
 
@@ -107,7 +98,6 @@ header {
 }
 
 input[type="text"] {
-/*     font-weight: 400; */
     font-size: 16px;
 }
 
@@ -141,24 +131,20 @@ th {
     font-weight: 700;
     font-size: 14px;
     text-align: center;
-    color: #303030;
-    padding: 12px 14px;
+    padding: 12px 15px;
 }
 
 td {
-/*     font-weight: 400; */
     font-size: 14px;
-    color: #303030;
-    padding: 10.75px 15px;
+    padding: 12px 15px;
 }
 
 footer {
-    padding: 26px 0px 27px;
+    padding: 26px 0px;
     background-color: rgba(163, 167, 255, 0.3);
 }
 
 a {
-/*     font-weight: 400; */
     font-size: 14px;
 }
 
