@@ -75,10 +75,14 @@ header {
     background: url(./assets/Vector.svg) no-repeat left 50%;
 }
 
-
-ol.list-number {
+.list-marker {
     padding: 0px 20px;
 }
+
+.list-number {
+    padding: 0px 20px;
+}
+
 
 .checkbox {
     margin-right: 4px;
