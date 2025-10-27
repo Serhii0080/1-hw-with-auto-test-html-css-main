@@ -9,7 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@0,700;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style0.css">
     <title>Lesson1</title>
 </head>
 
@@ -17,12 +17,19 @@
     <section class="app">
         <div class="card">
             <div class="product-img-block">
-                <img src="./assets/images_Lesson/main_image.png" alt="Main image">
-                <div class="preview selected">
-                    <img src="./assets/images_Lesson/image1.png" alt="preview 1">
+                <div class="img-wrap">
+                    <img src="./assets/images_Lesson/main_image.png" alt="Main image">
                 </div>
-                <div class="preview">
-                    <img src="./assets/images_Lesson/image2.png" alt="Preview 2">
+
+
+                <div class="preview-wrapper">
+                    <div class="preview selected">
+                        <img src="./assets/images_Lesson/image1.png" alt="preview 1">
+                    </div>
+                    <div class="preview">
+                        <img src="./assets/images_Lesson/image2.png" alt="Preview 2">
+                    </div>
+
                 </div>
             </div>
             <div>
@@ -35,7 +42,7 @@
                         traditions</p>
                     <div class="color-options">
                         <h2 class="title">Color options</h2>
-                        <ul>
+                        <ul class="otions-list">
                             <li class="selected">
                                 <div class="circle blue"></div>
                             </li>
@@ -53,17 +60,19 @@
                             </li>
                         </ul>
                     </div>
-                    <div>
-                        <h2 class="title">Quantity</h2>
-                        <select class="Quantity" name="Quantity" id="Quantity">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
-                    </div>
-                    <div>
-                        <h2 class="title">Price</h2>
-                        <span class="price">eur 39,00</span>
+                    <div class="wrapper">
+                        <div>
+                            <h2 class="title">Quantity</h2>
+                            <select class="Quantity" name="Quantity" id="Quantity">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                        <div>
+                            <h2 class="title">Price</h2>
+                            <span class="price">eur 39,00</span>
+                        </div>
                     </div>
                     <button class="btn">Add To Basket</button>
                 </div>

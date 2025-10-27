@@ -16,6 +16,9 @@ ul {
     width: 1440px;
     height: 1024px;
     background-color: #eff2f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
@@ -24,22 +27,46 @@ ul {
     box-shadow: 20px 20px 40px 0 rgba(81, 91, 117, 0.25);
     background-color: #fff;
     padding: 60px 0 70px;
+    display: flex;
 }
 
 .product-img-block {
-    width: 540px;
+    min-width: 540px;
     border-right: 2px solid rgba(20, 20, 20, 0.15);
+    display: flex;
+    flex-direction: column;
+}
+
+.img-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+
+.preview-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
 }
 
 .preview {
     width: 80px;
     height: 80px;
     background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s;
 }
 
+.preview:hover,
 .preview.selected {
     box-shadow: 8px 8px 16px 0 rgba(81, 91, 117, 0.25);
 }
+
 
 .product-description-block {
     padding: 0 60px;
@@ -90,13 +117,30 @@ ul {
     margin-bottom: 20px;
 }
 
+.otions-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
 
-li.selected {
+li {
     width: 30px;
     height: 30px;
     border-radius: 100%;
     background-color: #fff;
+    padding: 7px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+li:hover,
+li.selected {
     box-shadow: 2px 2px 6px 0 rgba(81, 91, 117, 0.25);
+}
+
+li:hover {
+    transform: translateY(-5px);
 }
 
 .circle {
@@ -126,6 +170,14 @@ li.selected {
     background-color: #f2c723;
 }
 
+.wrapper {
+    display: flex;
+}
+
+.wrapper>div {
+    flex-grow: 1;
+}
+
 .Quantity {
     width: 80px;
     height: 24px;
@@ -138,9 +190,10 @@ li.selected {
     color: rgba(20, 20, 20, 0.8);
 
     appearance: none;
-    background-image: url(./assets/images1/ph_caret-down-bold.svg);
+    background-image: url(./assets/images_Lesson/ph_caret-down-bold.svg);
     background-repeat: no-repeat;
     background-position: right 0 top 50%;
+    cursor: pointer;
 }
 
 .price {
@@ -160,4 +213,10 @@ li.selected {
     letter-spacing: 0.01em;
     color: #fff;
     margin-top: 75px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn:hover {
+    transform: translateY(5px);
 }
