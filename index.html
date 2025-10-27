@@ -6,138 +6,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>It-incubator precourse</title>
 </head>
 
-<body>
-    <!-- ЗАДАНИЕ -->
-    <!-- Необходимо создать html-элементы там, где это нужно, в соответствии с правилами семантической разметки -->
-    <!-- ⚠️ Атрибут data-cy удалять нельзя! Он учавствует в проверке. Если его удалить, тесты не пройдут. -->
-
-    <header>
-        <span class="logo" data-cy="hw2-header-span">IT-INCUBATOR</span>
+<body data-cy="hw3-body-pre">
+    <header data-cy="hw3-header">
+        <div class="container">
+            <span data-cy="hw3-header-span">IT-INCUBATOR</span>
+        </div>
     </header>
 
-    <section class="main-section" data-cy="hw2-section-main-pre">
-        <!-- 1) В этом разделе создай 3 дочерних элемента: -->
+    <section class="main-section" data-cy="hw3-section-main-pre">
+        <div class="container">
 
-        <!-- a) Заголовок первого уровня со своим ФИО -->
-        <h1 class="main-title" data-cy="hw2-main-title">Жук Сергей Юриевич</h1>
-        <!-- b) Несколько строк о себе: где учишься или работаешь, хобби, увлечения. Используй тег для абзаца. Длина строки должна быть больше 50-ти симвов (пробелы и др знаки припинания тоже считаются символом) -->
-        <p class="main-text" data-cy="hw2-text">
-            Учусь на FrontEnd в школе IT-инкубатор, занимаюсь вёрсткой HTML и CSS, люблю слушать аудиокниги.
-        </p>
+            <div class="wrapper">
+                <div class="text-wrapper" data-cy="hw3-text-wrapper-pre">
+                    <h1 class="main-title" data-cy="hw3-main-title">Жук Сергей Юриевич</h1>
+                    <p class="main-text" data-cy="hw3-text">Учусь на FrontEnd в школе IT-инкубатор, занимаюсь
+                        вёрсткой
+                        HTML и CSS, люблю слушать аудиокниги.</p>
+                </div>
+                <img class="main-image" data-cy="hw3-main-image" src="./assets/Clip path group.png" alt="img">
+            </div>
 
-        <!-- c) Фото (или любую картинку из интернета). Не забудь добавить описание на случай, если изображение не загрузится -->
-        <img class="main-img" src="./assets/Clip path group.png" alt="img" data-cy="hw2-main-image">
+        </div>
     </section>
 
-    <section class="section-hobbies" data-cy="hw2-section-about-pre">
-        <!-- 2) В этом разделе создай выпадающий список с разными городами (не меньше 3-х). Свой город сделай вторым в этом списке. С помощью специального атрибута, сделай так, чтобы твой город всегда был выбранным по умолчанию  -->
-        <select class="select-city" name="City" data-cy="hw2-select-pre">
-            <option value="Odessa">Odessa</option>
-            <option value="Zhytomyr" selected>Zhytomyr</option>
-            <option value="Vinnytsia">Vinnytsia</option>
-        </select>
-        <div data-cy="hw1-unordered-list-box-pre">
-            <!-- 3) В этом разделе создай 2 дочерних элемента: -->
+    <section class="about-section" data-cy="hw3-section-about-pre">
+        <div class="container">
+            <div class="wrapper">
+                <select data-cy="hw3-select-pre" name="" id="">
+                    <option value="">Odessa</option>
+                    <option value="" selected>Zhytomyr</option>
+                    <option value="">Vinnytsia</option>
+                </select>
 
-            <!-- a) Заголовок 2-го уровня (любимые книги/фильмы/блюда/страны... и т.п.) -->
-            <h2 data-cy="hw2-section-title-pre" class="title">Рейтинг любимых сериалов</h2>
-            <!-- b) Маркированный список. В списке должно быть не менее 3-х элементов -->
-            <ul class="list-marker" data-cy="hw2-books-list-pre">
-                <li class="list-custom">Stop if You Can</li>
-                <li class="list-custom">Silicon Valley</li>
-                <li class="list-custom">Billions</li>
-                <li class="list-custom">Mr. Robot</li>
-            </ul>
+                <div class="info-wrapper" data-cy="hw3-info-wrapper-pre">
+                    <div class="frameworks" data-cy="hw3-frameworks-pre">
+                        <h2 class="section-title" data-cy="hw3-section-title-pre">Языки программирования</h2>
+                        <ul class="frameworks-list" data-cy="hw3-frameworks-list-pre">
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+                    <div class="books" data-cy="hw3-books-pre">
+                        <h2 class="section-title" data-cy="hw3-section-title-pre">Рейтинг любимых сериалов</h2>
+                        <ol class="books-list" data-cy="hw3-books-list-pre">
+                            <li>Stop if You Can</li>
+                            <li>Silicon Valley</li>
+                            <li>Billions</li>
+                            <li>Mr. Robot</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="skills-wrapper">
+                    <h2 class="section-title" data-cy="hw3-section-title-pre">Мои скиллы</h2>
+
+                    <div class="skills-block" data-cy="hw3-skills-block-pre">
+                        <div class="skills" data-cy="hw3-skills-pre">
+                            <label class="label" data-cy="hw3-label-pre" for="1">
+                                <input type="checkbox" checked name="" id="1">
+                                HTML
+                            </label>
+
+                            <label class="label" data-cy="hw3-label-pre" for="2">
+                                <input type="checkbox" checked name="" id="2">
+                                CSS
+                            </label>
+
+                            <label class="label" data-cy="hw3-label-pre" for="3">
+                                <input type="checkbox" name="" id="3">
+                                JavaScript
+                            </label>
+
+                            <label class="label" data-cy="hw3-label-pre" for="4">
+                                <input type="checkbox" name="" id="4">
+                                React
+                            </label>
+
+                            <label class="label" data-cy="hw3-label-pre" for="5">
+                                <input type="checkbox" name="" id="5">
+                                Jquery
+                            </label>
+                        </div>
+
+                        <form>
+                            <input class="text-field" data-cy="hw3-text-field-pre" type="text"
+                                placeholder="Новый скилл">
+                            <button class="btn" data-cy="hw3-btn-pre">Добавить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="line" data-cy="hw3-line-pre">
+
+            <table data-cy="hw3-about-table-pre" border="1">
+                <tr>
+                    <th>п/п</th>
+                    <th>Наименование</th>
+                    <th>Количество</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Монитор</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Клавиатура</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Мышь</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Итого:</td>
+                    <td>4</td>
+                </tr>
+            </table>
         </div>
-        <div data-cy="hw1-ordered-list-box-pre">
-            <!-- 3) В этом разделе создай 2 дочерних элемента: -->
-
-            <!-- a) Заголовок 2-го уровня с другим названием (любимые книги/фильмы/блюда/страны... и т.п.) -->
-            <h2 class="title">Языки программирования</h2>
-            <!-- b) Нумерованный (упорядоченный) список. В списке должно быть не менее 3-х элементов -->
-            <ol class="list-number" data-cy="hw2-frameworks-list-pre">
-                <li class="list">JavaScript</li>
-                <li class="list">HTML</li>
-                <li class="list">CSS</li>
-            </ol>
-        </div>
-        <div data-cy="hw1-skills-box-pre">
-            <h2 class="title">Мои скиллы</h2>
-            <!-- 4) Здесь создай несколько чекбоксов с подписью (не меньше 3-х). 
-                - В подписи укажи названия любых тем по верстке (все, что знаешь или слышал). 
-                - Каждый чекбокс должен быть связан со своей подписью. Для этого чекбокс должен находиться в элементе для подписи
-                - Отметь "галочкой" (с помощью специального атрибута) темы, которые ты уже знаешь. -->
-            <label class="name" data-cy="hw2-label-pre">
-                <input class="checkbox" type="checkbox" checked>HTML
-            </label>
-
-            <label class="name">
-                <input class="checkbox" type="checkbox" checked>CSS
-            </label>
-
-            <label class="name">
-                <input class="checkbox" type="checkbox">JavaScript
-            </label>
-
-            <label class="name">
-                <input class="checkbox" type="checkbox">React
-            </label>
-
-            <label class="name">
-                <input class="checkbox" type="checkbox">Jquery
-            </label>
-
-        </div>
-        <!-- 5) Создай здесь однострочное поле для ввода текста с подсказкой "Новый скилл", которая исчезает, когда начинаешь что-то печатать (для подсказки есть специальный атрибут) -->
-        <input class="text-inp" type="text" placeholder="Новый скилл" data-cy="hw2-text-field-pre">
-        <!-- 6) Создай здесь кнопку “Добавить” -->
-        <button data-cy="hw2-btn-pre">Добавить</button>
-        <!-- 7) Добавь горизонтальную линию (для этого есть специальный тег) -->
-        <hr data-cy="hw2-line-pre">
-
-        <table data-cy="hw2-about-table-pre">
-            <!-- 8) В таблице сделай 5 строк и 3 столбца. 
-                        - В первой строке ячейки заголовков, в остальных обычные ячейки
-                        - Добавь границы для всей таблицы с помощью специального атрибута border="". Он устарел, но работает
-                        - В последнем ряду первая ячейка должна занимать 2 столбца (как должно выглядеть - смотри образец). Таблицу можно заполнять любыми данными -->
-            <tr>
-                <th>п/п</th>
-                <th>Наименование</th>
-                <th>Количество</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Монитор</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Клавиатура</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Мышь</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td colspan="2">Итого:</td>
-                <td>5</td>
-            </tr>
-
-        </table>
-
     </section>
-    <footer data-cy="hw-footer-pre">
-        <!-- 9) Создай здесь ссылку на наш сайт https://it-incubator.io/ (текст ссылки должен быть it-incubator) -->
-        <a href="https://it-incubator.io/" target="_blank" data-cy="hw-footer-link-pre">it-incubator</a>
+
+    <footer data-cy="hw3-footer-pre">
+        <a class="footer-link" data-cy="hw3-footer-link-pre" href="https://it-incubator.io/">it-incubator</a>
     </footer>
 </body>
 
