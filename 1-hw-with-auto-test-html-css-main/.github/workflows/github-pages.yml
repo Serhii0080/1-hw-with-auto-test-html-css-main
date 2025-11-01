@@ -10,5 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Copy site files
+        run: |
+          cp -r 1-hw-with-auto-test-html-css-main/* .
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
+
