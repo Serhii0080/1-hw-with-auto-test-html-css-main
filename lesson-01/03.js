@@ -5,4 +5,16 @@
 */
 
 // your code
-let sum
+let sum = 0;
+
+let i = 0;
+
+const metric = 2;
+
+while (i < 20) {
+    if (i % metric !== 0) {
+        sum += i;
+    }
+    i++;
+}
+console.log(sum);
