@@ -4,6 +4,21 @@
  * Результат сохраните в переменной grade.
  */
 
-const score = 70 // тестовое значение, можно изменять
-let grade
+const score = 70; // тестовое значение, можно изменять
+let grade;
 // your code
+if (score < 50) {
+    grade = "F";
+} else if (score > 49 && score < 70) {
+    grade = "D";
+} else if (score > 69 && score < 80) {
+    grade = "C";
+} else if (score > 79 && score < 90) {
+    grade = "B";
+} else if (score > 89 && score < 101) {
+    grade = "A";
+} else {
+    grade = "Ввидите коректное значение 0 - 100";
+}
+
+console.log(grade);
