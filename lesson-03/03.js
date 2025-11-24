@@ -10,4 +10,4 @@ function findLargest(number1, number2, number3) {
     }
 }
 
-findLargest(355, 12, 172);
+console.log(findLargest(355, 12, 172));
