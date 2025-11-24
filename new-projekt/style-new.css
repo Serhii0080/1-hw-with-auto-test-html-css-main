@@ -133,6 +133,10 @@ ul {
     line-height: 24px;
 }
 
+.section-card {
+    padding-top: 100px;
+}
+
 .header-card-wrapper {
     min-height: 100px;
     display: flex;
@@ -231,4 +235,46 @@ ul {
 
 button:active {
     transform: translateY(-2px);
+}
+
+.author-section-wrapper {
+    display: flex;
+    gap: 60px;
+    margin: 100px 0;
+}
+
+.author {
+    margin: auto;
+}
+
+.author a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 400px;
+    width: 112px;
+    height: 112px;
+    background-color: #118da8;
+    margin-bottom: 20px;
+}
+
+.author span {
+    display: block;
+    width: max-content;
+    font-size: 17px;
+    line-height: 27px;
+    color: #118da8;
+}
+
+.author h2 {
+    font-size: 65px;
+    line-height: 79px;
+    letter-spacing: 2.6px;
+}
+
+.author p {
+    font-size: 22px;
+    line-height: 33px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 30px;
 }
