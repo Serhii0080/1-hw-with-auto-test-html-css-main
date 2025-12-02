@@ -13,8 +13,6 @@
 includesElement([1, 2, 3], 2)  // должен вернуть `true`.
 */
 
-let array = [4, 5, 1, 3, 9, 7, 8, 10];
-
 function includesElement(number) {
     for (let i = 0; i < array.length; i++) {
         if (number === array[i]) {
@@ -23,5 +21,3 @@ function includesElement(number) {
     }
     return false;
 }
-
-console.log(includesElement(7));
