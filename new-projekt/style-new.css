@@ -161,9 +161,8 @@ ul {
     background-color: #118da8;
     font-size: 17px;
     line-height: 27px;
-    cursor: pointer;
-    transition: transform 0.08s ease, box-shadow 0.08s ease;
 }
+
 
 .card {
     display: flex;
@@ -229,11 +228,18 @@ ul {
     width: 208px;
     height: 50px;
     margin-top: 22px;
+}
+
+button {
     cursor: pointer;
     transition: transform 0.08s ease, box-shadow 0.08s ease;
 }
 
 button:active {
+    transform: translateY(-2px);
+}
+
+.author a:active {
     transform: translateY(-2px);
 }
 
@@ -256,12 +262,14 @@ button:active {
     height: 112px;
     background-color: #118da8;
     margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.08s ease, box-shadow 0.08s ease;
 }
 
-.author span {
+.span-text {
     display: block;
     width: max-content;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 27px;
     color: #118da8;
 }
@@ -277,4 +285,54 @@ button:active {
     line-height: 33px;
     color: rgba(255, 255, 255, 0.7);
     margin-top: 30px;
+}
+
+.email-section {
+    padding: 100px 0;
+}
+
+.email-wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 32px;
+    background-color: #000;
+    padding: 60px 60px 75px;
+}
+
+.email-wrapper h2 {
+    font-size: 72px;
+    line-height: 79px;
+    letter-spacing: 2.85;
+    max-width: 430px;
+    background-color: #000;
+}
+
+input[type="text"],
+input[type="email"] {
+    border: 1px solid #191919;
+    border-radius: 6px;
+    width: 522px;
+    height: 82px;
+    background-color: #191919;
+    font-size: 24px;
+    line-height: 29px;
+    color: rgba(255, 255, 255, 0.7);
+    padding-left: 20px;
+}
+
+form button {
+    border: none;
+    border-radius: 6px;
+    width: 87px;
+    height: 48px;
+    background-color: #118da8;
+    font-size: 15px;
+    line-height: 29px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
