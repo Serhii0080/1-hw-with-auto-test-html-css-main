@@ -19,14 +19,18 @@ const game = {
     addResource(resource, amount) {
         for (const key in this.resources) {
             if (resource === key) {
-                return (this.resources[key] += amount);
-            } else {
-                return console.log("Invalid resource");
+                return (this.resources[resource] += amount);
             }
+        }
+        if (this.resources.resource !== true) {
+            return console.log("Invalid resource");
         }
     },
 };
 
-// game.addResource("gold", 100);
-
+game.addResource("gold", 50);
+game.addResource("lumber", 30);
+game.addResource("stone", 10);
 console.log(game);
+
+// resource !== key
