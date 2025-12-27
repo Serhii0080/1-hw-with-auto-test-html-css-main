@@ -4,14 +4,17 @@
  */
 
 function isNumeric(str) {
-    let check = 0;
-    check -= str;
-
-    return check < 0 ? true : false;
+    if (str / 1) {
+        return true;
+    } else if (str === "0" || str === 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
-// console.log(isNumeric("123")); // Ожидаемый результат: true
+console.log(isNumeric("123")); // Ожидаемый результат: true
 console.log(isNumeric("12.3")); // Ожидаемый результат: true
 console.log(isNumeric("123abc")); // Ожидаемый результат: false
-// console.log(isNumeric("abc")); // Ожидаемый результат: false
-// console.log(isNumeric(" ")); // Ожидаемый результат: false
+console.log(isNumeric("abc")); // Ожидаемый результат: false
+console.log(isNumeric(" ")); // Ожидаемый результат: false
