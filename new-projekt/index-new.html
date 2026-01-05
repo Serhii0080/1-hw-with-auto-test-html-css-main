@@ -23,24 +23,26 @@
                     <img src="./assets-new/logo.svg" alt="logo">
                 </a>
 
-                <ul class="box-menu">
+                <img class="burger-menu" src="./assets-new/Vector.png_burger-menu.png" alt="burger-menu">
+
+                <ul class="box-menu burger">
                     <li>
-                        <a href="#">
+                        <a href="#Home">
                             Home
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#Episodes">
                             Episodes
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#About">
                             About
                         </a>
                     </li>
                     <li>
-                        <a class="contact-nav" href="#">
+                        <a class="contact-nav" href="#Contact">
                             Contact
                         </a>
                     </li>
@@ -52,26 +54,29 @@
 
     </header>
 
-    <section class="main-section">
+    <section class="main-section" id="Home">
 
         <div class="container">
 
             <div class="main-section-wrapper">
 
-                <img class="main-img" src="./assets-new/main-img.png" alt="main-img">
+                <div class="main-img-wrapper">
+                    <img class="main-img" src="./assets-new/main-img.png" alt="main-img">
+                </div>
 
 
                 <div class="wrapper-text">
 
                     <h1>
                         Take your podcast to the
+                        <span class="span-next">next</span>
+                        <span class="span-level">level</span>
                     </h1>
 
-                    <span class="span-next">next</span>
-                    <span class="span-level">level</span>
 
 
-                    <div class="menu-icon">
+
+                    <div class="menu-icon icon">
                         <span class="text-icon">Listen on</span>
                         <ul>
                             <li>
@@ -109,7 +114,7 @@
 
     </section>
 
-    <section class="section-card">
+    <section class="section-card" id="Episodes">
 
         <div class="container">
 
@@ -183,7 +188,7 @@
         </div>
     </section>
 
-    <section class="author-section">
+    <section class="author-section" id="About">
         <div class="container">
 
             <div class="author-section-wrapper">
@@ -197,13 +202,13 @@
                     <p>Jacob has a background in audio engineering, and has been podcasting since the early days.</p>
                     <p>He’s here to help you level up your game by sharing everything he’s learned along the way.</p>
                 </div>
-                <img src="./assets-new/Author.png" alt="AuthorImage">
+                <img class="autor-img" src="./assets-new/Author.png" alt="AuthorImage">
             </div>
 
         </div>
     </section>
 
-    <section class="email-section">
+    <section class="email-section" id="Contact">
         <div class="container">
             <div class="email-section-wrapper">
                 <div class="email-wrapper">
@@ -218,6 +223,7 @@
                     </div>
 
                     <form>
+
                         <input type="text" placeholder="Name">
 
                         <input type="email" placeholder="Email">
@@ -307,7 +313,7 @@
     <footer>
         <div class="container">
             <div class="footer-wrapper">
-                <div class="social-networks">
+                <div class="social-networks menu-icon">
                     <a class="footer-logo">
                         <img src="./assets-new/logo.svg" alt="logo">
                     </a>
@@ -330,15 +336,15 @@
                     </ul>
                 </div>
                 <div class="footer-nav">
-                    <nav>
+                    <nav class="box-menu">
                         <ul>
-                            <li><a>Home</a></li>
-                            <li><a>About</a></li>
-                            <li><a>Episodes</a></li>
-                            <li><a>Contact</a></li>
+                            <li><a href="#Home">Home</a></li>
+                            <li><a href="#About">About</a></li>
+                            <li><a href="#Episodes">Episodes</a></li>
+                            <li><a href="#Contact">Contact</a></li>
                         </ul>
                     </nav>
-                    <nav>
+                    <nav class="box-menu">
                         <ul>
                             <li><a>Style Guide</a></li>
                             <li><a>Instructions</a></li>
@@ -348,33 +354,35 @@
                             <li><a>Licenses</a></li>
                         </ul>
                     </nav>
-                    <ul class="footer-menu-icon">
-                        <li>
-                            <a>
-                                <img src="./assets-new/action-icons/action-icons_1.svg" alt="listen-spotify">
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <img src="./assets-new/action-icons/action-icons_2.svg" alt="listen-pocket-casts">
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <img src="./assets-new/action-icons/action-icons_3.svg" alt="listen-Soundcloud">
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <img src="./assets-new/action-icons/action-icons_4.svg" alt="listen-apple-podcasts">
-                            </a>
-                        </li>
-                        <li>
-                            <a class="icon">
-                                <img src="./assets-new/action-icons/action-icons_5.svg" alt="listen-overcast">
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="menu-icon">
+                        <ul>
+                            <li>
+                                <a>
+                                    <img src="./assets-new/action-icons/action-icons_1.svg" alt="listen-spotify">
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="./assets-new/action-icons/action-icons_2.svg" alt="listen-pocket-casts">
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="./assets-new/action-icons/action-icons_3.svg" alt="listen-Soundcloud">
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="./assets-new/action-icons/action-icons_4.svg" alt="listen-apple-podcasts">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="icon">
+                                    <img src="./assets-new/action-icons/action-icons_5.svg" alt="listen-overcast">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
                 </div>
             </div>
