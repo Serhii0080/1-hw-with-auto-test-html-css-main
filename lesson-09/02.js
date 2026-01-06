@@ -59,11 +59,11 @@ startButton.addEventListener("click", () => {
 cancelButton.addEventListener("click", () => {
     // your code
     if (timerState !== 2 && timerState === 1) {
+        clearInterval(timerId);
         countdownDisplay.textContent = "Отменено";
+    } else if (isTimerStarted === true) {
         clearInterval(timerId);
-    } else {
         countdownDisplay.textContent = "Готовы?";
-        clearInterval(timerId);
     }
     isTimerStarted = false;
 });
