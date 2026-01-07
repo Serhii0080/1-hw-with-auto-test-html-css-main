@@ -34,37 +34,30 @@ let state = "idle"; // 'idle' | 'counting' | 'finished'
 let timerId;
 
 startButton.addEventListener("click", () => {
-    if (state !== "idle") {
-        return;
-    } else {
-        state = "counting";
-        let counter = 3;
-        // your code
+    // your code
 
-        countdownDisplay.textContent = counter;
+    if (state !== "idle") return;
+    state = "counting";
+    let counter = 3;
 
-        timerId = setInterval(() => {
-            counter -= 1;
+    countdownDisplay.textContent = counter;
 
-            if (counter > 0) {
-                countdownDisplay.textContent = counter;
-            } else if (counter === 0) {
-                clearInterval(timerId);
-                countdownDisplay.textContent = "🚀";
-                state = "finished";
-                counter = 3;
-            }
-        }, 1000);
-    }
+    timerId = setInterval(() => {
+        counter -= 1;
+
+        if (counter > 0) {
+            countdownDisplay.textContent = counter;
+        } else if (counter === 0) {
+            clearInterval(timerId);
+            countdownDisplay.textContent = "🚀";
+            state = "finished";
+            counter = 3;
+        }
+    }, 1000);
 });
 
 cancelButton.addEventListener("click", () => {
     // your code
-    if (state === "finished") {
-        state = "idle";
-        clearInterval(timerId);
-        countdownDisplay.textContent = "Готовы?";
-    }
     if (state !== "counting") return;
     clearInterval(timerId);
     countdownDisplay.textContent = "Отменено";
