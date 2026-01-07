@@ -58,6 +58,11 @@ startButton.addEventListener("click", () => {
 
 cancelButton.addEventListener("click", () => {
     // your code
+    if (state === "finished") {
+        state = "idle";
+        clearInterval(timerId);
+        countdownDisplay.textContent = "Отменено";
+    }
     if (state !== "counting") return;
     clearInterval(timerId);
     countdownDisplay.textContent = "Отменено";
