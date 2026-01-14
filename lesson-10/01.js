@@ -30,9 +30,13 @@ const model = {
         view.renderMovies(this.movies);
     },
     // your code
-    deleteMovie(movie) {
-        if (movie === "delite") {
-            view.renderMovies((this.movies = []));
+    deleteMovie(id) {
+        const index = this.movies.findIndex(
+            (element) => element.id === Number(id)
+        );
+        if (index !== -1) {
+            this.movies.splice(index, 1);
+            view.renderMovies(this.movies);
         }
     },
 };
@@ -59,9 +63,9 @@ const view = {
         // your code
         list.addEventListener("click", (event) => {
             const delButton = event.target.classList.contains("delete-button");
-
             if (delButton) {
-                controller.deleteMovie();
+                const id = event.target.parentElement.id;
+                controller.deleteMovie(id);
             }
         });
     },
@@ -104,10 +108,9 @@ const controller = {
         }
     },
     // your code
-    deleteMovie() {
-        const movie = "delite";
+    deleteMovie(id) {
         const message = "Фильм успешно удалён!";
-        model.deleteMovie(movie);
+        model.deleteMovie(id);
         view.displayMessage(message);
     },
 };
